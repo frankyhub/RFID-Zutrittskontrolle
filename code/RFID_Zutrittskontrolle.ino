@@ -70,7 +70,7 @@ MFRC522 mfrc522{driver};         // MFRC522 Instance
 
 // WLAN Zugangsdaten
 const char* ssid = "R2-D2";
-const char* password = "2QK384JVPX";
+const char* password = "xxx";
 
 long timezone = 0;
 byte daysavetime = 1;
