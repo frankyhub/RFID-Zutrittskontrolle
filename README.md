@@ -14,8 +14,8 @@
 
 ## Story
 Dieses Projekt umfasst eine Zutrittskontrolle mit einem RFID-Benutzerverwaltungssystem auf einem Webserver. Der ESP32 ist mit einem MFRC522 RFID-Lesegerät und einem microSD-Karten Modul verbunden. Auf der SD-Karte werden alle Benutzerdaten gespeichert. Der WEB-Server umfasst ein Zutritts-Protokoll in dem alle Zutritte mit Datum, Uhrzeit, UID (UID = Unique Identification), Name und Status (User oder Admin) gespeichert sind. Nicht erfasste RFID-Karten haben den Status "unbekannt".
-Zutrittsberechtigte Personen erfasst man auf der WEB-Seite "Mitglieder". Auf dieser Seite speichert man die UID, den Namen und den Status der zutrittsberechtigten Person. In der Mitglieder-Verwaltung sind alle zutrittsberechtigten Personen gelistet. Auf dieser Seite besteht auch die Möglichkeit zutrittsberechtigte Personen zu löschen.
-Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (Relais), der GPIO 4 zeigt einen unbekannten User an. Ein Zutritt wird nicht erteilt.
+Zutrittsberechtigte Personen erfasst man auf der WEB-Seite "Mitglieder". Auf dieser Seite speichert man die UID, den Namen und den Status der zutrittsberechtigten Person. In der Mitglieder-Verwaltung sind alle zutrittsberechtigten Personen gelistet. Auf dieser Seite besteht auch die Möglichkeit zutrittsberechtigte Personen wieder zu löschen.
+Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (z.B. Relais), der GPIO 4 zeigt einen unbekannten User an. Ein Zutritt wird nicht erteilt.
 
 ---
 
