@@ -21,9 +21,14 @@ Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (z.B. R
 
 ![Bild](pic/Protokoll.png)
 
-![Bild](pic/Verwaltung.png)
+
 
 ![Bild](pic/Mitglieder.png)
+
+
+![Bild](pic/Verwaltung.png)
+
+
 
 ---
 
