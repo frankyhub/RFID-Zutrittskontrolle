@@ -17,11 +17,15 @@ Dieses Projekt umfasst eine Zutrittskontrolle mit einem RFID-Benutzerverwaltungs
 Zutrittsberechtigte Personen erfasst man auf der WEB-Seite "Mitglieder". Auf dieser Seite speichert man die UID, den Namen und den Status der zutrittsberechtigten Person. In der Mitglieder-Veraltung sind alle zutrittsberechtigten Personen gelistet. Auf dieser Seite besteht die Möglichkeit zutrittsberechtigte Personen zu löschen.
 Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (Relais), der GPIO 4 zeigt einen unbekannten User an. Ein Zutritt wird nicht erteilt.
 
+---
+
 ![Bild](pic/Protokoll.png)
 
 ![Bild](pic/Verwaltung.png)
 
 ![Bild](pic/Mitglieder.png)
+
+---
 
 ## Hardware
 
@@ -34,7 +38,35 @@ Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (Relais
 | 2        | 220 Ohm    |
 | -------- | -------- | 
 
+---
 
+## MicroSD - ESP32
+
+| MicroSD | 	ESP32| 
+| -------- | -------- | 
+|3V3	 |               3.3V|
+|CS	  |              GPIO 15|
+|MOSI	 |             GPIO 23|
+|CLK	 |               GPIO 18|
+|MISO	 |             GPIO 19|
+|GND	|                GND|
+| -------- | -------- | 
+
+---
+
+## RFID Reader - ESP32
+
+| RFID Reader	 | 	ESP32| 
+| -------- | -------- | 
+|SDA	  |      GPIO 5	  |       
+|SCK	  |      GPIO 18	  |          
+|MOSI	  |    GPIO 23	    |       
+|MISO	  |    GPIO 19	   |         
+|IRQ	  |     NC	|     
+|GND	  |      GND	|
+|RST	  |      GPIO 21	 |          
+|3.3V	  |    3.3V	    |           
+| -------- | -------- | 
 
 ---
 
