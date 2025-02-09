@@ -34,6 +34,7 @@ Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (Relais
 | 1        | ESP32 DOIT DEVKIT V1 Board       | 
 | 1        | MFRC522 RFID Reader/Writer        | 
 | 1        | MicroSD Card Module        | 
+| 1        | MicroSD Card 16GB       | 
 | 2        | 5mm LED   (Relais)     | 
 | 2        | 220 Ohm    |
 | -------- | -------- | 
