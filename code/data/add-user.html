@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitglieder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="brand">RFID Zutrittskontrolle</a>
+            <ul class="nav-menu">
+                <li><a href="/">📄 Protokoll</a></li>
+                <li><a href="add-user">➕ Mitglieder </a></li>
+                <li><a href="manage-users">👤 Mitglieder Verwaltung</a></li>
+<!--                <li><a href="add-person">➕ Add Person</a></li>
+                <li><a href="manage-person">👤 Manage Person</a></li> -->
+            </ul>
+        </div>
+    </nav>
+    <div class="main-container">
+        <section class="main-section">
+            <h2>➕ Mitglied hinzuf&uuml;gen</h2>
+            <p>F&uuml;ge die UID ein.</p><br>
+            <form action="get" class="user-form">
+                <label for="uid">UID</label>
+                <input type="text" id="uid" name="uid" required>
+            <p>Gib den Namen ein.</p><br>
+            <form action="get" class="person-form">
+                <label for="person">Name</label>
+                <input type="text" id="person" name="person" required>
+
+
+
+               <label for="role">Status</label>
+                <select id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+                <button type="submit">✅ Speichern</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
