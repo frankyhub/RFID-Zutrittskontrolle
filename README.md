@@ -17,11 +17,11 @@ Dieses Projekt umfasst eine Zutrittskontrolle mit einem RFID-Benutzerverwaltungs
 Zutrittsberechtigte Personen erfasst man auf der WEB-Seite "Mitglieder". Auf dieser Seite speichert man die UID, den Namen und den Status der zutrittsberechtigten Person. In der Mitglieder-Veraltung sind alle zutrittsberechtigten Personen gelistet. Auf dieser Seite besteht die Möglichkeit zutrittsberechtigte Personen zu löschen.
 Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (Relais), der GPIO 4 zeigt einen unbekannten User an. Ein Zutritt wird nicht erteilt.
 
-![Bild](pic/Protokoll.png
+![Bild](pic/Protokoll.png)
 
-![Bild](pic/Verwaltung.png
+![Bild](pic/Verwaltung.png)
 
-![Bild](pic/Mitglieder.png
+![Bild](pic/Mitglieder.png)
 
 ## Hardware
 
