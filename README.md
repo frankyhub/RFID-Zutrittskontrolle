@@ -89,9 +89,9 @@ Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (z.B. R
 
 4. Programm kompilieren und in den ESP32 laden
 5. plugins in den Arduino IDE Ordner C:\Users\<username>\.arduinoIDE\ kopieren
-6. Mit [Ctrl] + [Shift] + [P] den Upload Little FS to Pico/ESP8266/ESP32 öffnen und in den ESP32 laden
+6. Mit [Ctrl] + [Shift] + [P] den Upload Little FS to Pico/ESP8266/ESP32 öffnen und den data-Ordner in den ESP32 laden
 7. Die im seriellen Monitor gelistete IP-Adresse des WEB-Servers kopieren und im Browser öffnen
-8. Auf der Protokoll-Seite die UIDs auslesen und in der Mitglieder-Seite zuordnen
+8. Auf der Protokoll-Seite die UIDs auslesen und in der Mitglieder-Seite den Namen zuordnen
 9. Funktionstest 
 
 <div style="position:absolute; left:2cm; ">   
