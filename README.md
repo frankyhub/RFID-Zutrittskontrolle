@@ -81,11 +81,11 @@ Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (z.B. R
 1. Arduino IDE V2 installieren
 2. Librarys laden
    
-2a. ESPASyncWebServer: https://github.com/me-no-dev/ESPAsyncWebServer
+   2a. ESPASyncWebServer: https://github.com/me-no-dev/ESPAsyncWebServer
 
-2b. AsyncTCP: https://github.com/me-no-dev/asynctcp
+   2b. AsyncTCP: https://github.com/me-no-dev/asynctcp
 
-2c. RFID_MFRC522v2 https://downloads.arduino.cc/libraries/github.com/OSSLibraries/RFID_MFRC522v2-2.0.6.zip
+   2c. RFID_MFRC522v2 https://downloads.arduino.cc/libraries/github.com/OSSLibraries/RFID_MFRC522v2-2.0.6.zip
 
 4. Programm kompilieren und in den ESP32 laden
 5. plugins in den Arduino IDE Ordner C:\Users\<username>\.arduinoIDE\ kopieren
