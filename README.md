@@ -80,15 +80,19 @@ Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (z.B. R
 
 1. Arduino IDE V2 installieren
 2. Librarys laden
+   
 2a. ESPASyncWebServer: https://github.com/me-no-dev/ESPAsyncWebServer
+
 2b. AsyncTCP: https://github.com/me-no-dev/asynctcp
+
 2c. RFID_MFRC522v2 https://downloads.arduino.cc/libraries/github.com/OSSLibraries/RFID_MFRC522v2-2.0.6.zip
-3. Programm kompilieren und in den ESP32 laden
-4. plugins in den Arduino IDE Ordner C:\Users\<username>\.arduinoIDE\ kopieren
-5. Mit [Ctrl] + [Shift] + [P] den Upload Little FS to Pico/ESP8266/ESP32 öffnen und in den ESP32 laden
-6. Die im seriellen Monitor gelistete IP-Adresse des WEB-Servers kopieren und im Browser öffnen
-7. Auf der Protokoll-Seite die UIDs auslesen und in der Mitglieder-Seite zuordnen
-8. Funktionstest 
+
+4. Programm kompilieren und in den ESP32 laden
+5. plugins in den Arduino IDE Ordner C:\Users\<username>\.arduinoIDE\ kopieren
+6. Mit [Ctrl] + [Shift] + [P] den Upload Little FS to Pico/ESP8266/ESP32 öffnen und in den ESP32 laden
+7. Die im seriellen Monitor gelistete IP-Adresse des WEB-Servers kopieren und im Browser öffnen
+8. Auf der Protokoll-Seite die UIDs auslesen und in der Mitglieder-Seite zuordnen
+9. Funktionstest 
 
 <div style="position:absolute; left:2cm; ">   
 <ol class="breadcrumb" style="border-top: 2px solid black;border-bottom:2px solid black; height: 45px; width: 900px;"> <p align="center"><a href="#oben">nach oben</a></p></ol>
