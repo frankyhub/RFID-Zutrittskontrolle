@@ -44,8 +44,8 @@ Bei einem admin geht der GPIO 22 und der Gpio 0 kuzzeitig auf HIGH. Mit dem GPIO
 | 1        | MFRC522 RFID Reader/Writer        | 
 | 1        | MicroSD Card Module        | 
 | 1        | MicroSD Card 16GB       | 
-| 2        | 5mm LED   (Relais)     | 
-| 2        | 220 Ohm    |
+| 3        | 5mm LED   (Relais)     | 
+| 3        | 220 Ohm    |
 | -------- | -------- | 
 
 ---
