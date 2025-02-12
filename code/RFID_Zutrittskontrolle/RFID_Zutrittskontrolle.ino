@@ -3,8 +3,9 @@
                                       PROGRAMMINFO
 **************************************************************************************************
   Funktion: RFID Zutrittskontrolle
+  Ausgewertet werden user, admin und unbekannt
 **************************************************************************************************
-  Version: 09.02.2025
+  Version: 12.02.2025
 **************************************************************************************************
   Board: DOIT ESP32 DEVKIT V1
 
@@ -41,7 +42,7 @@ GND	                GND
 
 LED —  GPIO 22 (mit 220 Ohm) Freigabe, Zugang gewährt
 Buzzer — GPIO 4 (mit 220 Ohm) Unbekannter User, kein Zugang
-
+admin  - GPIO 0; //Admin, Zugang zur 2. Türe wird gewährt
 
 **************************************************************************************************/
 #include <Arduino.h>
@@ -70,7 +71,7 @@ MFRC522 mfrc522{driver};         // MFRC522 Instance
 
 // WLAN Zugangsdaten
 const char* ssid = "R2-D2";
-const char* password = "xxx";
+const char* password = "2QK384JVPX";
 
 long timezone = 0;
 byte daysavetime = 1;
@@ -89,6 +90,8 @@ String inputParam;
 
 const int ledPin = 22; //Freigabe, Zugang gewährt
 const int buzzerPin = 4; //Unbekannter User, kein Zugang
+const int admin = 0; //Admin, Zugang 2. Türe gewährt
+
 
 // Auf die SD-Karte schreiben
 void writeFile(fs::FS &fs, const char * path, const char * message) {
@@ -342,6 +345,9 @@ void setup() {
   digitalWrite(ledPin, LOW);
   pinMode(buzzerPin, OUTPUT);
   digitalWrite(buzzerPin, LOW);
+  pinMode(admin, OUTPUT);
+  digitalWrite(admin, LOW);
+
 
   // Root / Webseite
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
@@ -432,6 +438,13 @@ void loop() {
   }
   Serial.print("Card UID: ");
   Serial.println(uidString);
+/***
+if (uidString  = "", "", "admin") {
+    digitalWrite(admin, HIGH);
+    delay(500);
+    digitalWrite(admin, LOW);
+  }
+***/
 
   String role = getRoleFromFile("/users.txt", uidString);
   if (role != "") {
@@ -439,20 +452,32 @@ void loop() {
     Serial.print(uidString);
     Serial.print(" ist ");
     Serial.println(role);
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
+    digitalWrite(ledPin, HIGH);
+    delay(500);
+    digitalWrite(ledPin, LOW);
 
   } else {
     role = "unbekannt";
     Serial.print("UID: ");
     Serial.print(uidString);
-    Serial.println(" Nicht gefunden, setze die UID auf unbekannt");
-  digitalWrite(buzzerPin, HIGH);
-  delay(2500);
-  digitalWrite(buzzerPin, LOW);
+    Serial.println(" Nicht gefunden, die UID ist unbekannt");
+    digitalWrite(buzzerPin, HIGH);
+    delay(2500);
+    digitalWrite(buzzerPin, LOW);
   }
-  String sdMessage = uidString + "," + role;
+  String sdMessage = uidString + ","  + role;
   appendFile(SD, "/log.txt", sdMessage.c_str());
+
+
+ //Admin Zugang 
+  int index = role.lastIndexOf(",");
+  int length = role.length();
+  String sub_S = role.substring(index, length);
+
+if (sub_S == ",admin"){
+      digitalWrite(admin, HIGH);
+      delay(500);
+      digitalWrite(admin, LOW);
+ }
 
 }
