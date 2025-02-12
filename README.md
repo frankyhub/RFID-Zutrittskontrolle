@@ -19,7 +19,7 @@ Der WEB-Server umfasst ein Zutritts-Protokoll in dem alle Zutritte mit Datum, Uh
 Zutrittsberechtigte Personen erfasst man auf der WEB-Seite "Mitglieder". Auf dieser Seite speichert man die UID, den Namen und den Status der zutrittsberechtigten Person. In der Mitglieder-Verwaltung sind alle zutrittsberechtigten Personen gelistet. Auf dieser Seite besteht auch die Möglichkeit zutrittsberechtigte Personen wieder zu löschen.
 
 Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (z.B. Relais), der GPIO 4 zeigt einen unbekannten User an. Ein Zutritt wird nicht erteilt. 
-Bei einem admin geht der GPIO 22 und der Gpio 0 kuzzeitig auf HIGH. Mit dem GPIO 0 kann ein Admin-Bereich geöffnet werden.
+Bei einem admin geht der GPIO 22 und der Gpio 0 kuzzeitig auf HIGH. Mit dem GPIO 0 kann somit ein Admin-Bereich geöffnet werden.
 
 ---
 
