@@ -21,6 +21,7 @@ Zutrittsberechtigte Personen erfasst man auf der WEB-Seite "Mitglieder". Auf die
 Wird Zugang gewährt, geht der GPIO 22 auf HIGH und erteilt die Freigabe (z.B. Relais), der GPIO 4 zeigt einen unbekannten User an. Ein Zutritt wird nicht erteilt. 
 Bei einem admin geht der GPIO 22 und der Gpio 0 kuzzeitig auf HIGH. Mit dem GPIO 0 kann somit ein Admin-Bereich geöffnet werden.
 
+
 ---
 
 ![Bild](pic/Protokoll.png)
