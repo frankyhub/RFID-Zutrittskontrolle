@@ -5,9 +5,14 @@
 |[:skull:ISSUE](https://github.com/frankyhub/RFID-Zutrittskontrolle/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/RFID-Zutrittskontrolle/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/RFID-Zutrittskontrolle/wiki)||
 |--|--|--|--|
 | | | | |
-|![Static Badge](https://img.shields.io/badge/RepoNr.:-%20104-blue)|<a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/issues">![GitHub issues](https://img.shields.io/github/issues/frankyhub/RFID-Zutrittskontrolle)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/RFID-Zutrittskontrolle)|<a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/discussions">![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/RFID-Zutrittskontrolle)|<a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/releases">![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/RFID-Zutrittskontrolle)|
-|![GitHub Created At](https://img.shields.io/github/created-at/frankyhub/RFID-Zutrittskontrolle)| <a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)|
+<a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/issues">![GitHub issues](https://img.shields.io/github/issues/frankyhub/RFID-Zutrittskontrolle)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/RFID-Zutrittskontrolle)|<a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/discussions">![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/RFID-Zutrittskontrolle)|<a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/6eleases">![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/RFID-Zutrittskontrolle)|![Static Badge](https://img.shields.io/badge/RepoNr.:-%20104-blue)|
+|![GitHub Created At](https://img.shields.io/github/created-at/frankyhub/RFID-Zutrittskontrolle)| <a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/RFID-Zutrittskontrolle/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)||
+
 </div>
+
+<img src="pic/01wled.png" width="500"> 
+<br> <br>
+
 
 # RFID-Zutrittskontrolle
 
@@ -24,16 +29,14 @@ Bei einem admin geht der GPIO 22 und der Gpio 0 kuzzeitig auf HIGH. Mit dem GPIO
 
 ---
 
-![Bild](pic/Protokoll.png)
+<img src="pic/Protokoll.png" width="500"> 
+<br> <br>
 
+<img src="pic/Mitglieder.png" width="500"> 
+<br> <br>
 
-
-![Bild](pic/Mitglieder.png)
-
-
-![Bild](pic/Verwaltung.png)
-
-
+<img src="pic/Verwaltung.png" width="500"> 
+<br> <br>
 
 ---
 
@@ -98,6 +101,8 @@ Bei einem admin geht der GPIO 22 und der Gpio 0 kuzzeitig auf HIGH. Mit dem GPIO
 7. Die im seriellen Monitor gelistete IP-Adresse des WEB-Servers kopieren und im Browser öffnen
 8. Auf der Protokoll-Seite die UIDs auslesen und in der Mitglieder-Seite den Namen zuordnen
 9. Funktionstest 
+
+---
 
 <div style="position:absolute; left:2cm; ">   
 <ol class="breadcrumb" style="border-top: 2px solid black;border-bottom:2px solid black; height: 45px; width: 900px;"> <p align="center"><a href="#oben">nach oben</a></p></ol>
