@@ -10,10 +10,6 @@
 
 </div>
 
-<img src="pic/01wled.png" width="500"> 
-<br> <br>
-
-
 # RFID-Zutrittskontrolle
 
 
